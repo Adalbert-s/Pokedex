@@ -5,7 +5,10 @@ function App() {
 
   return (
     <>
-      <PokemonList />
+    <div className='logo_top'>
+    </div>
+
+    <PokemonList />
     </>
   )
 }

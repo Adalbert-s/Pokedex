@@ -8,20 +8,31 @@ const card = (pokemon) => {
   const types = `type ${pokemon.types[0].type.name}`
 
   return(
-    <div className={cardName}>
-      
-      <div className='imagem'>
-        <img src={pokemon.sprites.other.home.front_default} alt={pokemon.name} /> 
+    <div className='logo'>
+      <div className={cardName}>
+        
+      <div className='logo'>
+        <div className='imagem'>
+          <img src={pokemon.sprites.other.home.front_default} alt={pokemon.name} /> 
+        </div>
       </div>
 
+        
       <div className='nome_pokemon'>
         <h2>{pokemon.name}</h2>  
       </div>
-      
+         
       <div className={types}>
-        <h2>{pokemon.types[0].type.name}</h2>
+          <h2>{pokemon.types[0].type.name}</h2>
+      </div>
+
+      <div className= 'dados'>
+
+        <h2>{pokemon.stats.map((item) => (<p>{item.stat.name}: {item.base_stat}</p>))}</h2>
+
       </div>
        
+      </div>
     </div>
   )
 }

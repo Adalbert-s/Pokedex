@@ -3,13 +3,14 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  border: rgb(114, 18, 18);
   
 }
 
 .logo {
-  height: 6em;
+  height: 50%;
+  display: inline-block;
   padding: 1.5em;
+
   will-change: filter;
   transition: filter 300ms;
 
@@ -45,24 +46,42 @@
 }
 
 .corpo{
-  background-color: rgb(255, 255, 255);
   text-transform: capitalize;
   border-radius: 10%;
   display: inline-block;
-  width: 40%;
-  margin:12px
+  margin:12px;
+
+  padding: 1.5em
 }
 
 .nome_pokemon > h2 {
-  color: white;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .imagem > img{
   width: 40%;
 }
 
+.dados > h2{
+
+  color: black;
+  background-color: white;
+  border-radius: 10%;
+  height: 10%;
+  width: 80%;
+  display:inline-block;
+  padding: 1.5em;
+
+  will-change: filter;
+  transition: filter 300ms;
+
+} 
+
 .grass{
   background-color: green;
+  
 }
 .fire{
   background-color: firebrick;
